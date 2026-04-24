@@ -2,7 +2,7 @@ resource "aws_security_group" "frontend-dev" {
 
   name        = var.sg_name
   description = var.sg_description
-  vpc_id = aws_vpc.main.id
+  vpc_id = var.vpc_id
   tags = merge(
     local.common_tags,
     var.sg_tags,
