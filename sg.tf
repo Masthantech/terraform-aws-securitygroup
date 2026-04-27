@@ -1,4 +1,4 @@
-resource "aws_security_group" "frontend-dev" {
+resource "aws_security_group" "roboshop-dev" {
 
   name        = var.sg_name
   description = var.sg_description
